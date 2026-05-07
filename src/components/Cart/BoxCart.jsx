@@ -1,6 +1,6 @@
 import { toast } from "react-toastify";
 
-const BoxCart = ({ setSelectedProducts, selectedProducts, cartBadge, setCartBadge }) => {
+const BoxCart = ({ setSelectedProducts, selectedProducts,  setCartBadge }) => {
   const total = selectedProducts.reduce((sum, product) => {
     const priceNumber = parseFloat(product.price.replace(/[^0-9.-]/g, ''));
     return sum + priceNumber;

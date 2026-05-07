@@ -7,6 +7,7 @@ import Rating from './components/Rating/Rating'
 import { ToastContainer } from 'react-toastify'
 import GetStarted from './components/GetStarted/GetStarted'
 import Subscription from './components/Subscription/Subscription'
+import WorkFLow from './components/WorkFlow/WorkFLow'
 
 const fetchData = async () => {
   const res = await fetch("/data.json");
@@ -43,6 +44,7 @@ function App() {
 
       <GetStarted></GetStarted>
       <Subscription></Subscription>
+      <WorkFLow></WorkFLow>
 
       <ToastContainer></ToastContainer>
     </>
