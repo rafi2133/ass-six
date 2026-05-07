@@ -1,11 +1,11 @@
 // import React from 'react';
 
-const NavBar = ({cartBadge}) => {
+const NavBar = ({ cartBadge }) => {
     return (
         <div className='w-12/12 mx-auto'>
             <div className="flex justify-between navbar bg-base-100 shadow-sm">
                 <a href='' className=" text-2xl text-[#7427e0]">DigiTools</a>
-                <div className="">
+                <div className="hidden sm:flex">
                     <ul className='flex gap-3 font-bold'>
                         <li><a href="">Products</a></li>
                         <li><a href="">Features</a></li>
@@ -14,16 +14,32 @@ const NavBar = ({cartBadge}) => {
                         <li><a href="">FAQ</a></li>
                     </ul>
                 </div>
+                <div className="dropdown sm:hidden">
+                    <div tabIndex={0} role="button" className="btn btn-ghost btn-circle">
+                        <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h7" />
+                        </svg>
+                    </div>
+                    <ul
+                        tabIndex={-1}
+                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                    >
+                        <li><a href="">Products</a></li>
+                        <li><a href="">Features</a></li>
+                        <li><a href="">Pricing</a></li>
+                        <li><a href="">Testimonials</a></li>
+                        <li><a href="">FAQ</a></li>
+                    </ul>
+                </div>
                 <div className="space-x-1">
-                    <div  className="relative inline-block mr-1 ">
+                    <div className="relative inline-block mr-1 ">
                         <button><i className="fa-solid fa-cart-shopping text-xl"></i></button>
                         <div className={`
-                            ${
-                                cartBadge === 0 
-                                ?"hidden "
-                                :"absolute -top-3 -right-1 z-5 text-white bg-red-500 rounded-full text-xs w-5 h-5 flex items-center justify-center font-semibold"
+                            ${cartBadge === 0
+                                ? "hidden "
+                                : "absolute -top-3 -right-1 z-5 text-white bg-red-500 rounded-full text-xs w-5 h-5 flex items-center justify-center font-semibold"
                             }`}>
-                           {cartBadge}
+                            {cartBadge}
                         </div>
                     </div>
                     <button className='btn btn-xs font-bold'>Login</button>

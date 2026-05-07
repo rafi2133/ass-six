@@ -23,7 +23,7 @@ const BoxCart = ({ setSelectedProducts, selectedProducts, cartBadge, setCartBadg
 
   return (
     <div className='border rounded-lg my-10 p-4 gap-4'>
-      <h2>Your products <i className="fa-solid fa-cart-arrow-down"></i></h2>
+     {selectedProducts.length === 0? "": <h2>Your products <i className="fa-solid fa-cart-arrow-down"></i></h2>}
 
       {selectedProducts.length === 0 ? (
         <div className="text-center py-10">
@@ -50,7 +50,7 @@ const BoxCart = ({ setSelectedProducts, selectedProducts, cartBadge, setCartBadg
           ))}
           <div className="flex my-4 justify-between bg-[#F9FAFC] border py-1 px-4 rounded-lg">
             <h2 className="font-bold">Total:</h2>
-            <p className="font-bold">{total}$</p>
+            <p className="font-bold">${total}</p>
           </div>
           <button onClick={handleProceed} className="btn w-full bg-gradient-to-r from-[#561774] via-[#9c3bdd] to-[#df60f8] text-white">
             Proceed to Checkout
