@@ -1,0 +1,74 @@
+[
+  {
+    "image": "/images/writing_2327400 1.png",
+    "badge": "Popular",
+    "title": "AI Writing Pro",
+    "description": "Generate high‑quality content, blogs, and marketing copy in seconds with advanced AI.",
+    "price": "$29/mo",
+    "features": [
+      "Unlimited AI generations",
+      "50+ writing templates",
+      "Grammar checker"
+    ]
+  },
+  {
+    "image": "/images/design-tool.png",
+    "badge": "Best Seller",
+    "title": "SEO Optimizer",
+    "description": "Boost your website ranking with AI‑driven keyword research, backlink analysis, and on‑page SEO.",
+    "price": "$39/mo",
+    "features": [
+      "Real‑time keyword suggestions",
+      "Competitor analysis",
+      "Content readability score"
+    ]
+  },
+  {
+    "image": "/images/camera.png",
+    "badge": "New",
+    "title": "AI Image Studio",
+    "description": "Create stunning visuals, logos, and marketing graphics from text prompts in seconds.",
+    "price": "$19/mo",
+    "features": [
+      "Text‑to‑image generation",
+      "Background remover",
+      "100+ artistic styles"
+    ]
+  },
+  {
+    "image": "/images/operation.png",
+    "badge": "Popular",
+    "title": "ChatAssistant Pro",
+    "description": "Build smart chatbots for customer support, lead generation, and 24/7 engagement.",
+    "price": "$49/mo",
+    "features": [
+      "Multi‑language support",
+      "Live chat analytics",
+      "Easy API integration"
+    ]
+  },
+  {
+    "image": "/images/portfolio.png",
+    "badge": "Best Seller",
+    "title": "VideoAI Creator",
+    "description": "Automatically edit, caption, and repurpose long videos into shorts for social media.",
+    "price": "$59/mo",
+    "features": [
+      "Auto‑captions & subtitles",
+      "Scene detection",
+      "Export to all formats"
+    ]
+  },
+  {
+    "image": "/images/social-media.png",
+    "badge": "New",
+    "title": "CodeGenius",
+    "description": "AI pair programmer that writes, explains, and debugs code in JavaScript, Python, and more.",
+    "price": "$34/mo",
+    "features": [
+      "Real‑time code suggestions",
+      "Bug fix explanations",
+      "Unit test generation"
+    ]
+  }
+]

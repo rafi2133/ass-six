@@ -1,0 +1,64 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.circle-stack {
+    display: inline-flex;
+    align-items: center;
+   
+    /* space between circles and text */
+}
+
+.circles {
+    position: relative;
+    width: 48px;
+    /* adjust overall size */
+    height: 48px;
+    flex-shrink: 0;
+}
+
+.circles>div {
+    position: absolute;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 4 concentric circles – innermost = deepest magenta, each outer is lighter */
+.circle-1 {
+    width: 7px;
+    height: 7px;
+    background: #811FF9;
+    z-index: 4;
+}
+
+.circle-2 {
+    width: 11px;
+    height: 11px;
+    background: #B47BFC;
+    z-index: 3;
+}
+
+.circle-3 {
+    width: 15px;
+    height: 15px;
+    background: #D1BEFE;
+    z-index: 2;
+}
+
+.circle-4 {
+    width: 19px;
+    height: 19px;
+    background: #ffccff;
+    z-index: 1;
+}
+
+.sentence {
+    font-family: system-ui, 'Segoe UI', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+
