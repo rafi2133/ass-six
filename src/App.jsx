@@ -6,6 +6,7 @@ import NavBar from './components/NavBar/NavBar'
 import Rating from './components/Rating/Rating'
 import { ToastContainer } from 'react-toastify'
 import GetStarted from './components/GetStarted/GetStarted'
+import Subscription from './components/Subscription/Subscription'
 
 const fetchData = async () => {
   const res = await fetch("/data.json");
@@ -41,7 +42,7 @@ function App() {
       </Suspense>
 
       <GetStarted></GetStarted>
-
+      <Subscription></Subscription>
 
       <ToastContainer></ToastContainer>
     </>
