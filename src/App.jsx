@@ -5,6 +5,7 @@ import Card from './components/Card/Card'
 import NavBar from './components/NavBar/NavBar'
 import Rating from './components/Rating/Rating'
 import { ToastContainer } from 'react-toastify'
+import GetStarted from './components/GetStarted/GetStarted'
 
 const fetchData = async () => {
   const res = await fetch("/data.json");
@@ -38,6 +39,8 @@ function App() {
       }>
         <Card dataPromise={dataPromise} cartBadge={cartBadge} setCartBadge={setCartBadge}></Card>
       </Suspense>
+
+      <GetStarted></GetStarted>
 
 
       <ToastContainer></ToastContainer>

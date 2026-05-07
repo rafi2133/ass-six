@@ -22,13 +22,13 @@ const NavBar = ({ cartBadge }) => {
                     </div>
                     <ul
                         tabIndex={-1}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow"
+                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow bg-[#a52222] text-white hover:bg-[#f04545]"
                     >
-                        <li><a href="">Products</a></li>
-                        <li><a href="">Features</a></li>
-                        <li><a href="">Pricing</a></li>
-                        <li><a href="">Testimonials</a></li>
-                        <li><a href="">FAQ</a></li>
+                        <li className="hover:bg-[#550a0a]"><a href="">Products</a></li>
+                        <li className="hover:bg-[#550a0a]"><a href="">Features</a></li>
+                        <li className="hover:bg-[#550a0a]"><a href="">Pricing</a></li>
+                        <li className="hover:bg-[#550a0a]"><a href="">Testimonials</a></li>
+                        <li className="hover:bg-[#550a0a]"><a href="">FAQ</a></li>
                     </ul>
                 </div>
                 <div className="space-x-1">
