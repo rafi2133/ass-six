@@ -13,7 +13,7 @@ const WorkFLow = () => {
                             Explore Products
                         </span>
                     </button>
-                    <button className=" bg-transparent text-white  btn  rounded-3xl">View Pricing</button>
+                    <button className=" bg-transparent text-white  btn  rounded-3xl m-1">View Pricing</button>
                     <p className="text-white mt-4">14-day free trial • No credit card required • Cancel anytime</p>
             </div>
         </div>

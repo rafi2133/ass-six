@@ -2,10 +2,10 @@ import banner from '../../assets/products/banner.png'
 
 const Banner = () => {
     return (
-        <div className=' md:flex text-center my-20 items-center gap-10 justify-center'>
-            <div className="">
-                <div className="space-y-4">
-                    <div className="circle-stack rounded-full bg-[#E1E7FF] px-3">
+        <div className=' flex my-20 items-center justify-center flex-col md:flex-row gap-6 md:gap-10'>
+            <div className="text-center ">
+                <div className="text-center w-full md:w-auto max-w-lg px-4">
+                    <div className="circle-stack rounded-full bg-[#E1E7FF] my-4 px-3">
                         <div className="circles">
                             <div className="circle-1"></div>
                             <div className="circle-2"></div>
@@ -16,7 +16,7 @@ const Banner = () => {
                     </div>
 
                     <h2 className='font-bold text-4xl'>Supercharge Your <br />Digital Workflow</h2>
-                    <p>Access premium AI tools, design assets, templates, and productivity <br />
+                    <p className='my-4'>Access premium AI tools, design assets, templates, and productivity <br />
                         software—all in one place. Start creating faster today. <br />
 
                         Explore Products
@@ -26,8 +26,8 @@ const Banner = () => {
                 </div>
                 {/* <div className=""></div> */}
             </div>
-            <div className=" w-80 my-4 mx-auto">
-                <img src={banner} alt="" />
+            <div className=" w-80 hidden md:block">
+                <img className='hidden sm:flex' src={banner} alt="" />
             </div>
         </div>
     );
